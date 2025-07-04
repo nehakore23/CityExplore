@@ -21,6 +21,8 @@ CityExplorer 🏙️ lets users explore cities, book tours 🗺️, and manage b
     
     → 🗄️ Entity Framework Core (MySQL)
     
-    → 🎨 Bootstrap, 💡 jQuery
+    → 🎨 Bootstrap, 
+    
+    → 💡 jQuery
     
     → 🧑‍💻 C#
