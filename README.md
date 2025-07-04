@@ -12,7 +12,7 @@ It features **secure login**, **city and tour browsing**, **booking management**
 - 🗄️ **ORM:** Entity Framework Core  
 - 🛢️ **Database:** MySQL  
 - 🔐 **Session Management:** Secure session handling  
-- ✉️ **Mail Service:** *(Optional - Add if you use password reset/notifications)*
+
 
 ---
 
@@ -38,8 +38,7 @@ It features **secure login**, **city and tour browsing**, **booking management**
 → 🏙️ **City Directory & Details**  
 → 📅 **Tour Booking & Management**  
 → 👤 **Profile Management**  
-→ 🛠️ **Admin Dashboard** for managing Cities, Customers, and Bookings  
-→ ✉️ *(Optional: Email Notifications, Forgot Password, etc.)*  
+→ 🛠️ **Admin Dashboard** for managing Cities, Customers, and Bookings    
 → 💻 **Modern & Responsive UI**  
 → 🔒 **Secure Backend**  
 → 🛢️ **Integrated Database with EF Core**
