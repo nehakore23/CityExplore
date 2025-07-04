@@ -17,7 +17,10 @@ CityExplorer 🏙️ lets users explore cities, book tours 🗺️, and manage b
 🛠️ Technologies Used:
 
 💻 ASP.NET Core MVC
+
 🗄️ Entity Framework Core (with MySQL)
+
 🎨 Bootstrap, 💡 jQuery
+
 🧑‍💻 C#
 
