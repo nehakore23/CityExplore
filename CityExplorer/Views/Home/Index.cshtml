@@ -1,0 +1,273 @@
+﻿@model IEnumerable<CityExplorer.Models.City>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .featured-destinations-section {
+        background: linear-gradient(135deg, #f8e1ff 0%, #e0e7ff 100%);
+        padding: 60px 0 80px 0;
+        border-radius: 0 0 40px 40px;
+        box-shadow: 0 8px 32px rgba(127,85,177,0.10);
+        position: relative;
+        overflow: hidden;
+    }
+    .featured-destinations-header h2 {
+        font-weight: 800;
+        letter-spacing: 1px;
+        color: #7F55B1;
+        text-shadow: 0 2px 8px #f49bab33;
+    }
+    .featured-destinations-header p {
+        font-size: 1.2rem;
+        color: #7F55B1cc;
+        font-weight: 500;
+    }
+    .city-card-modern {
+        background: rgba(255,255,255,0.85);
+        border-radius: 22px;
+        box-shadow: 0 8px 32px rgba(127,85,177,0.13), 0 1.5px 8px rgba(127,85,177,0.10);
+        border: 1.5px solid #f49bab33;
+        transition: box-shadow 0.25s, transform 0.18s;
+        min-width: 320px;
+        max-width: 340px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        backdrop-filter: blur(2.5px);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .city-card-modern:hover {
+        box-shadow: 0 16px 48px rgba(127,85,177,0.22);
+        transform: translateY(-6px) scale(1.03);
+    }
+    .city-card-modern .card-img-top {
+        height: 210px;
+        object-fit: cover;
+        border-radius: 0 0 18px 18px;
+        box-shadow: 0 2px 12px #f49bab22;
+        background: #f8e1ff;
+    }
+    .city-card-modern .card-title {
+        font-weight: 700;
+        color: #7F55B1;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+    .city-card-modern .card-text {
+        color: #4b3860;
+        font-size: 1.05rem;
+        opacity: 0.92;
+    }
+    .city-card-modern .price-tag {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: #F49BAB;
+    }
+    .city-card-modern .duration-tag {
+        font-size: 1rem;
+        color: #7F55B1cc;
+    }
+    .city-card-modern .btn-modern {
+        background: linear-gradient(90deg, #F49BAB 0%, #FFB6C1 100%);
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        font-weight: 700;
+        box-shadow: 0 2px 8px #F49BAB33;
+        padding: 0.7rem 1.5rem;
+        font-size: 1.08rem;
+        letter-spacing: 0.5px;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+    }
+    .city-card-modern .btn-modern:hover, .city-card-modern .btn-modern:focus {
+        background: linear-gradient(90deg, #FFB6C1 0%, #F49BAB 100%);
+        color: #fff;
+        box-shadow: 0 4px 16px #F49BAB66;
+        transform: translateY(-2px) scale(1.03);
+    }
+    media (max-width: 767px) {
+        .city-card-modern {
+            min-width: 90vw;
+            max-width: 98vw;
+        }
+    }
+</style>
+<div class="featured-destinations-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 featured-destinations-header mb-5 text-center">
+                <h2 class="display-5">
+                    <i class="fas fa-star"></i> Featured Destinations
+                </h2>
+                <p class="lead">Popular cities that travelers love</p>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+            @foreach (var city in Model)
+            {
+                <div>
+                    <div class="card city-card-modern h-100">
+                        @if (!string.IsNullOrEmpty(city.ImageUrl))
+                        {
+                            <img src="@city.ImageUrl" class="card-img-top" alt="@city.Name">
+                        }
+                        else
+                        {
+                            <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 210px;">
+                                <i class="fas fa-city fa-3x text-muted"></i>
+                            </div>
+                        }
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                <i class="fas fa-map-marker-alt text-primary"></i> @city.Name, @city.Country
+                            </h5>
+                            <p class="card-text flex-grow-1">@city.Description</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="price-tag">
+                                        <i class="fas fa-indian-rupee-sign"></i>@city.Price.ToString("F2")
+                                    </span>
+                                    <small class="duration-tag">
+                                        <i class="fas fa-clock"></i> @city.Duration days
+                                    </small>
+                                </div>
+                                @if (ViewBag.IsLoggedIn == true && ViewBag.UserRole == "Customer")
+                                {
+                                    <a href="#" class="btn btn-modern w-100" onclick="bookTour(@city.Id)">
+                                        <i class="fas fa-calendar-plus"></i> Book Now
+                                    </a>
+                                }
+                                else if (ViewBag.IsLoggedIn != true)
+                                {
+                                    <a asp-controller="Auth" asp-action="Login" class="btn btn-outline-primary w-100 btn-modern" style="background:transparent;color:#7F55B1;border:2px solid #7F55B1;">
+                                        <i class="fas fa-sign-in-alt"></i> Login to Book
+                                    </a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<section class="bg-light py-5 px-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="fw-bold text-primary mb-4 display-5">Why Choose CityExplorer?</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center g-4">
+            <div class="col-md-4">
+                <div class="card shadow-lg rounded-3 border-0 bg-white text-dark h-100">
+                    <div class="d-flex flex-column align-items-center p-4">
+                        <div class="bg-light rounded-circle p-3 mb-3 d-flex justify-content-center align-items-center shadow-sm" style="width:70px; height:70px;">
+                            <i class="fas fa-users fa-2x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Expert Guides</h4>
+                        <p class="mb-0">Professional local guides with extensive knowledge of each destination.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-lg rounded-3 border-0 bg-white text-dark h-100">
+                    <div class="d-flex flex-column align-items-center p-4">
+                        <div class="bg-light rounded-circle p-3 mb-3 d-flex justify-content-center align-items-center shadow-sm" style="width:70px; height:70px;">
+                            <i class="fas fa-shield-alt fa-2x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Safe & Secure</h4>
+                        <p class="mb-0">Your safety is our priority with comprehensive insurance and safety measures.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-lg rounded-3 border-0 bg-white text-dark h-100">
+                    <div class="d-flex flex-column align-items-center p-4">
+                        <div class="bg-light rounded-circle p-3 mb-3 d-flex justify-content-center align-items-center shadow-sm" style="width:70px; height:70px;">
+                            <i class="fas fa-heart fa-2x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Memorable Experiences</h4>
+                        <p class="mb-0">Create lasting memories with unique experiences tailored to your interests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ezy__about6_Kssjt0hr" id="ezy__about6_Kssjt0hr">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-12 col-md-8">
+        <h2 class="ezy__about6_Kssjt0hr-heading fw-bold mb-4">Our Story</h2>
+        <p class="ezy__about6_Kssjt0hr-sub-heading">
+                    City Explore was born from a love of travel and storytelling. We believe that every city has a unique rhythm, and the best way to feel it is through the eyes of those who call it home. By working with local guides and communities, we bring you meaningful journeys while supporting sustainable tourism.
+        </p>
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center mt-5">
+      <div class="col-12 col-md-5 order-2">
+        <div class="d-flex flex-column justify-content-center ezy__about6_Kssjt0hr-content pe-md-5">
+                    <h4 class="fw-bold mb-3">The Journey to Discovery.</h4>
+          <p class="mb-0">
+                        Finding a city that truly captures your spirit doesn't happen overnight. City Explore began with a spark—an unexpected moment while wandering through unfamiliar streets. What followed was a journey of passion, research, and endless exploration to bring you the most vibrant, immersive, and thoughtfully
+                        curated urban experiences — right at your fingertips.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 order-1 order-md-2 mb-4 mb-md-0">
+        <div>
+                    <img src="https://as2.ftcdn.net/jpg/01/24/43/51/1000_F_124435196_S2ESYVDQjz2f6ufKrVHEfAiT1ERjHZaZ.jpg" alt="" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center mt-5">
+      <div class="col-12 col-md-5 order-2">
+        <div class="d-flex flex-column justify-content-center ezy__about6_Kssjt0hr-content ps-md-5">
+                    <h4 class="fw-bold mb-3">The Way to Wonder..</h4>
+          <p class="mb-0">
+                        The path to discovering a city's soul isn't paved with maps alone. It's a dance of surprise encounters and quiet moments — where the ordinary turns magical. City Explore embraces the chaos, charm, and character of every corner — from the quiet alleys to the grand landmarks. Because sometimes, the journey through the city feels like a journey through yourself.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 order-1 mb-4 mb-md-0">
+        <div>
+                    <img src="https://marketplace.canva.com/MADatqHoBoo/1/thumbnail_large-1/canva-venice-italy-travel-traditional-landmark-MADatqHoBoo.jpg" alt="" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ezy__about6_Kssjt0hr img.img-fluid {
+    transition: transform 0.5s cubic-bezier(.4,2,.6,1), box-shadow 0.5s;
+    transform: scale(1) rotate(0deg);
+    box-shadow: 0 4px 24px rgba(24, 90, 157, 0.10);
+    animation: ourStoryImageFadeIn 1.2s ease;
+  }
+  .ezy__about6_Kssjt0hr img.img-fluid:hover {
+    transform: scale(1.08) rotate(-2deg) translateY(-10px);
+    box-shadow: 0 12px 32px rgba(24, 90, 157, 0.18);
+    animation: ourStoryImageBounce 0.7s;
+  }
+  keyframes ourStoryImageFadeIn {
+    0% { opacity: 0; transform: scale(0.95) translateY(30px); }
+    100% { opacity: 1; transform: scale(1) translateY(0); }
+  }
+  keyframes ourStoryImageBounce {
+    0% { transform: scale(1.08) rotate(-2deg) translateY(-10px); }
+    50% { transform: scale(1.12) rotate(-2deg) translateY(-18px); }
+    100% { transform: scale(1.08) rotate(-2deg) translateY(-10px); }
+  }
+</style>
+
+<script>
+    function bookTour(cityId) {
+        window.location.href = '/Customer/BookTour/' + cityId;
+    }
+</script>

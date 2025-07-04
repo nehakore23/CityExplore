@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CityExplorer",
+    "\\CityExplorer\\Views",
+    "\\CityExplorer\\Views\\Admin",
+    "\\CityExplorer\\Views\\Auth",
+    "\\CityExplorer\\Views\\Home",
+    "\\CityExplorer\\Views\\Shared",
+    "\\CityExplorer\\wwwroot",
+    "\\CityExplorer\\wwwroot\\js"
+  ],
+  "SelectedNode": "\\CityExplorer\\Views\\Home\\Index.cshtml",
+  "PreviewInSolutionExplorer": false
+}

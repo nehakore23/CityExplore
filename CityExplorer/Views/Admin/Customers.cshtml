@@ -1,0 +1,165 @@
+﻿@model IEnumerable<CityExplorer.Models.User>
+@{
+    ViewData["Title"] = "Manage Customers";
+}
+
+<!-- CSS -->
+<style>
+    body, .dashboard-card, .btn {
+        font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    }
+    .admin-bg {
+        background: linear-gradient(135deg, #7F55B1 0%, #9B7EBD 100%);
+        min-height: 100vh;
+        padding-bottom: 40px;
+    }
+    .dashboard-card {
+        background: rgba(255,255,255,0.85);
+        border-radius: 22px;
+        box-shadow: 0 8px 32px rgba(127,85,177,0.18), 0 1.5px 8px rgba(127,85,177,0.10);
+        padding: 2.5rem 2.5rem 2rem 2.5rem;
+        margin-bottom: 30px;
+        border: 2.5px solid #F49BAB33;
+        backdrop-filter: blur(8px);
+        transition: box-shadow 0.2s, border 0.2s;
+    }
+    .dashboard-card:hover {
+        box-shadow: 0 12px 40px rgba(127,85,177,0.22);
+        border: 2.5px solid #F49BAB44;
+    }
+    .dashboard-title {
+        color: #fff;
+        font-weight: 700;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 8px #7F55B188;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+    }
+    .btn-custom, .btn-custom-sm {
+        background: linear-gradient(90deg, #F49BAB 0%, #FFB6C1 100%);
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        font-weight: 600;
+        box-shadow: 0 2px 8px #F49BAB33;
+        padding: 0.7rem 2rem;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+        letter-spacing: 0.5px;
+        font-size: 1.1rem;
+    }
+    .btn-custom-sm {
+        padding: 0.5rem 1.2rem;
+        font-size: 1rem;
+    }
+    .btn-custom:hover, .btn-custom:focus, .btn-custom-sm:hover, .btn-custom-sm:focus {
+        background: linear-gradient(90deg, #FFB6C1 0%, #F49BAB 100%);
+        color: #fff;
+        box-shadow: 0 4px 16px #F49BAB66;
+        transform: translateY(-2px) scale(1.03);
+    }
+    .table {
+        background: transparent;
+        border-radius: 14px;
+        overflow: hidden;
+    }
+    .table thead {
+        background: #7F55B1;
+        color: #fff;
+        font-size: 1.08rem;
+        letter-spacing: 0.5px;
+    }
+    .table tbody tr {
+        transition: background 0.2s;
+    }
+    .table-hover tbody tr:hover {
+        background: #F49BAB22;
+    }
+    .badge-custom {
+        background: #F49BAB;
+        color: #7F55B1;
+        font-weight: 600;
+        border-radius: 12px;
+        padding: 0.4em 1em;
+        font-size: 1em;
+    }
+    .no-customers {
+        color: #9B7EBD;
+        text-align: center;
+        padding: 3rem 0 2rem 0;
+    }
+    .no-customers i {
+        font-size: 3rem;
+        color: #F49BAB;
+        margin-bottom: 1rem;
+    }
+</style>
+
+<div class="admin-bg">
+    <div class="container py-4">
+        <div class="row mb-4 align-items-center">
+            <div class="col-md-8">
+                <span class="dashboard-title"><i class="fas fa-users"></i> Customer Management</span>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="dashboard-card shadow">
+                    @if (Model != null && Model.Any())
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle">
+                                <thead>
+                                    <tr>
+                                        <th>Full Name</th>
+                                        <th>Username</th>
+                                        <th>Email</th>
+                                        <th>Phone</th>
+                                        <th>Joined Date</th>
+                                        @* <th>Total Bookings</th> *@
+                                        @* <th>Actions</th> *@
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var customer in Model)
+                                    {
+                                        <tr>
+                                            <td><strong>@customer.FullName</strong></td>
+                                            <td>@customer.Username</td>
+                                            <td>@customer.Email</td>
+                                            <td>@(customer.Phone ?? "N/A")</td>
+                                            <td>@customer.CreatedAt.ToString("MMM dd, yyyy")</td>
+                                            @* <td>
+                                                <span class="badge-custom">@customer.Bookings.Count</span>
+                                            </td> *@
+                                            @* <td>
+                                                <button class="btn btn-custom-sm" onclick="viewCustomerDetails(@customer.Id)">
+                                                    <i class="fas fa-eye"></i> View
+                                                </button>
+                                            </td> *@
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="no-customers">
+                            <i class="fas fa-users"></i>
+                            <h5>No customers found</h5>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function viewCustomerDetails(customerId) {
+        alert('Customer details functionality can be implemented here');
+    }
+</script>

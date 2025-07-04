@@ -1,0 +1,224 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+    body.register-bg {
+        min-height: 100vh;
+        background: #fff;
+        font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .register-flex-center {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    .glass-card {
+        background: rgba(255,255,255,0.85);
+        border-radius: 2rem;
+        box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18), 0 1.5px 6px 0 rgba(0,0,0,0.08);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1.5px solid rgba(255,255,255,0.22);
+        padding: 2.5rem 2rem 2rem 2rem;
+        max-width: 540px;
+        width: 100%;
+        transition: box-shadow 0.3s, transform 0.3s;
+        opacity: 0.97;
+    }
+    .glass-card:hover {
+        box-shadow: 0 12px 36px 0 rgba(31,38,135,0.22), 0 2px 12px 0 rgba(0,0,0,0.12);
+        transform: translateY(-4px) scale(1.02);
+    }
+    .glass-card .card-header {
+        background: linear-gradient(90deg, rgba(127,85,177,0.85) 0%, rgba(155,126,189,0.75) 60%, rgba(244,155,171,0.65) 100%);
+        border-radius: 1.5rem 1.5rem 0 0;
+        box-shadow: 0 2px 8px rgba(127,85,177,0.15);
+        font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        padding: 1.5rem 1rem 1rem 1rem;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .glass-card .card-header i {
+        margin-right: 0.5rem;
+    }
+    .glass-card .form-label {
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-weight: 500;
+        color: #7F55B1;
+        letter-spacing: 0.5px;
+    }
+    .glass-card .form-control {
+        border-radius: 1.2rem;
+        border: 1.5px solid #e3e8f0;
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
+        font-family: 'Poppins', Arial, sans-serif;
+        background: rgba(255,255,255,0.7);
+        box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .glass-card .form-control:focus {
+        border-color: #F49BAB;
+        box-shadow: 0 0 0 2px rgba(244,155,171,0.15);
+        outline: none;
+        background: rgba(255,255,255,0.95);
+    }
+    .glass-card .form-control::placeholder {
+        color: #b0b8c1;
+        font-style: italic;
+        opacity: 1;
+    }
+    .glass-card .btn-success {
+        background: linear-gradient(90deg, rgba(127,85,177,0.85) 0%, rgba(155,126,189,0.75) 60%, rgba(244,155,171,0.65) 100%);
+        border: none;
+        border-radius: 1.5rem;
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-weight: 600;
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+        box-shadow: 0 2px 8px rgba(127,85,177,0.15);
+        transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+        padding: 0.75rem 0;
+    }
+    .glass-card .btn-success:hover, .glass-card .btn-success:focus {
+        background: linear-gradient(90deg, rgba(244,155,171,0.75) 0%, rgba(155,126,189,0.85) 40%, rgba(127,85,177,0.95) 100%);
+        transform: scale(1.03);
+        box-shadow: 0 4px 16px rgba(127,85,177,0.25);
+        cursor: pointer;
+    }
+    .glass-card .btn, .glass-card .btn:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    .glass-card .form-check-input {
+        border-radius: 0.5rem;
+        border: 1.5px solid #e3e8f0;
+        transition: border-color 0.2s;
+    }
+    .glass-card .form-check-input:focus {
+        border-color: #F49BAB;
+        box-shadow: 0 0 0 2px rgba(244,155,171,0.10);
+    }
+    .glass-card .form-check-label {
+        font-family: 'Montserrat', Arial, sans-serif;
+        color: #7F55B1;
+        font-size: 1rem;
+    }
+    .glass-card .text-danger {
+        font-size: 0.95rem;
+    }
+    .glass-card .text-center a {
+        color: #7F55B1;
+        font-weight: 500;
+        transition: color 0.2s;
+    }
+    .glass-card .text-center a:hover {
+        color: #F49BAB;
+        text-decoration: underline;
+    }
+    media (max-width: 600px) {
+        .glass-card {
+            padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+            max-width: 98vw;
+        }
+    }
+</style>
+
+<body class="register-bg">
+    <div class="register-flex-center" style="margin-top:5.5rem;">
+        <div class="glass-card">
+            <div class="card-header bg-success text-white text-center">
+                <h3><i class="fas fa-user-plus"></i> Create Account</h3>
+            </div>
+            <div class="card-body">
+                <form asp-action="Register" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Username" class="form-label">
+                                <i class="fas fa-user"></i> Username *
+                            </label>
+                            <input asp-for="Username" class="form-control" placeholder="Choose a username" />
+                            <span asp-validation-for="Username" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Email" class="form-label">
+                                <i class="fas fa-envelope"></i> Email *
+                            </label>
+                            <input asp-for="Email" class="form-control" placeholder="Enter your email" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="FullName" class="form-label">
+                            <i class="fas fa-id-card"></i> Full Name *
+                        </label>
+                        <input asp-for="FullName" class="form-control" placeholder="Enter your full name" />
+                        <span asp-validation-for="FullName" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Phone" class="form-label">
+                            <i class="fas fa-phone"></i> Phone Number
+                        </label>
+                        <input asp-for="Phone" class="form-control" placeholder="Enter your phone number" />
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Password" class="form-label">
+                                <i class="fas fa-lock"></i> Password *
+                            </label>
+                            <input asp-for="Password" class="form-control" placeholder="Create a password" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="ConfirmPassword" class="form-label">
+                                <i class="fas fa-lock"></i> Confirm Password *
+                            </label>
+                            <input asp-for="ConfirmPassword" class="form-control" placeholder="Confirm your password" />
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-user-plus"></i> Create Account
+                        </button>
+                    </div>
+                </form>
+
+                <hr>
+                <div class="text-center">
+                    <p>
+                        Already have an account?
+                        <a asp-action="Login" class="text-decoration-none">
+                            <i class="fas fa-sign-in-alt"></i> Login here
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

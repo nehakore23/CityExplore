@@ -1,0 +1,91 @@
+@{
+    ViewData["Title"] = "About Us";
+}
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1 class="display-4">
+                <i class="fas fa-info-circle text-primary"></i> About CityExplorer
+            </h1>
+            <p class="lead text-muted">Your gateway to extraordinary city adventures</p>
+        </div>
+    </div>
+    
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+            <h2 class="mb-4">Our Story</h2>
+            <p class="lead">
+                Founded in 2020, CityExplorer was born from a passion for urban exploration and cultural discovery. 
+                We believe that every city has its own unique story, hidden gems, and unforgettable experiences waiting to be discovered.
+            </p>
+            <p>
+                Our team of travel enthusiasts and local experts work tirelessly to curate the most authentic and 
+                memorable city tours around the world. From bustling metropolises to charming historic towns, 
+                we help travelers connect with the heart and soul of each destination.
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <div class="text-center">
+                <i class="fas fa-city fa-10x text-primary opacity-25"></i>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="text-center mb-5">Our Mission & Values</h2>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-globe fa-3x text-primary mb-3"></i>
+                    <h4>Global Reach</h4>
+                    <p>Connecting travelers with amazing cities across all continents, making the world more accessible.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-handshake fa-3x text-primary mb-3"></i>
+                    <h4>Local Partnership</h4>
+                    <p>Working closely with local communities to provide authentic experiences while supporting local economies.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-leaf fa-3x text-primary mb-3"></i>
+                    <h4>Sustainable Tourism</h4>
+                    <p>Promoting responsible travel practices that preserve destinations for future generations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-12">
+            <div class="bg-primary text-white rounded p-5 text-center">
+                <h2 class="mb-4">Ready to Explore?</h2>
+                <p class="lead mb-4">Join thousands of satisfied travelers who have discovered amazing cities with us.</p>
+                @if (ViewBag.IsLoggedIn != true)
+                {
+                    <a class="btn btn-light btn-lg me-3" asp-controller="Auth" asp-action="Register">
+                        <i class="fas fa-user-plus"></i> Join Now
+                    </a>
+                    <a class="btn btn-outline-light btn-lg" asp-controller="Auth" asp-action="Login">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </a>
+                }
+                else if (ViewBag.UserRole == "Customer")
+                {
+                    <a class="btn btn-light btn-lg" asp-controller="Customer" asp-action="Cities">
+                        <i class="fas fa-map-marked-alt"></i> Browse Cities
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,117 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CityExplorer
+build_property.RootNamespace = CityExplorer
+build_property.ProjectDir = D:\CDAC\.NET\cityexplorer final\cityexplorer final\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\CDAC\.NET\cityexplorer final\cityexplorer final
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 6.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/bin/Debug/net9.0/Views/Admin/Cities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXGJpblxEZWJ1Z1xuZXQ5LjBcVmlld3NcQWRtaW5cQ2l0aWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Admin/Bookings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXEFkbWluXEJvb2tpbmdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Admin/Cities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXEFkbWluXENpdGllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Admin/CreateCity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXEFkbWluXENyZWF0ZUNpdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Admin/Customers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXEFkbWluXEN1c3RvbWVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXEFkbWluXERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Admin/EditCity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXEFkbWluXEVkaXRDaXR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXEF1dGhcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXEF1dGhcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Customer/BookTour.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXEN1c3RvbWVyXEJvb2tUb3VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Customer/Cities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXEN1c3RvbWVyXENpdGllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Customer/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXEN1c3RvbWVyXERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Customer/MyBookings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXEN1c3RvbWVyXE15Qm9va2luZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXEhvbWVcQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXEhvbWVcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXFNoYXJlZFxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXFNoYXJlZFxfVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CDAC/.NET/cityexplorer final/cityexplorer final/CityExplorer/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2l0eUV4cGxvcmVyXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-02az0wmehw

@@ -1,0 +1,266 @@
+﻿@model IEnumerable<CityExplorer.Models.Booking>
+@{
+    ViewData["Title"] = "My Bookings";
+}
+
+<style>
+    body, .booking-card, .btn {
+        font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    }
+    .customer-bg {
+        background: linear-gradient(135deg, #7F55B1 0%, #9B7EBD 100%);
+        min-height: 100vh;
+        padding-bottom: 40px;
+    }
+    .dashboard-title {
+        color: #fff;
+        font-weight: 700;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 8px #7F55B188;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+    }
+    .booking-card {
+        background: rgba(255,255,255,0.95);
+        border-radius: 22px;
+        box-shadow: 0 8px 32px rgba(127,85,177,0.18), 0 1.5px 8px rgba(127,85,177,0.10);
+        border: 2px solid #F49BAB33;
+        backdrop-filter: blur(8px);
+        transition: box-shadow 0.2s, border 0.2s, transform 0.18s;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 420px;
+        height: 100%;
+        margin-bottom: 2.5rem;
+        padding: 1.7rem 1.5rem 1.3rem 1.5rem;
+        gap: 0.7rem;
+    }
+    .booking-card:hover {
+        box-shadow: 0 16px 48px rgba(127,85,177,0.22);
+        border: 2px solid #F49BAB44;
+        transform: translateY(-4px) scale(1.03);
+    }
+    .booking-card .card-img-top {
+        margin-bottom: 1.2rem;
+        border-top-left-radius: 22px;
+        border-top-right-radius: 22px;
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+    }
+    .booking-card .card-title {
+        color: #7F55B1;
+        font-weight: 700;
+        font-size: 1.18rem;
+        margin-bottom: 0.8rem;
+        display: flex;
+        align-items: center;
+        gap: 0.4em;
+    }
+    .booking-card .card-text, .booking-card small {
+        color: #6c5a8a;
+        font-size: 1.05rem;
+    }
+    .booking-card .mb-2 {
+        margin-bottom: 0.7rem !important;
+    }
+    .booking-card .mb-3 {
+        margin-bottom: 1.2rem !important;
+    }
+    .booking-card .mt-auto {
+        margin-top: 1.3rem !important;
+    }
+    .booking-card .btn-custom-sm {
+        margin-right: 0.6rem;
+        margin-bottom: 0.3rem;
+    }
+    .booking-card .badge-custom {
+        margin-bottom: 0.2rem;
+    }
+    .btn-custom, .btn-custom-sm {
+        background: linear-gradient(90deg, #F49BAB 0%, #FFB6C1 100%);
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        font-weight: 600;
+        box-shadow: 0 2px 8px #F49BAB33;
+        padding: 0.7rem 2rem;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+        letter-spacing: 0.5px;
+        font-size: 1.08rem;
+    }
+    .btn-custom-sm {
+        padding: 0.5rem 1.2rem;
+        font-size: 1rem;
+    }
+    .btn-custom:hover, .btn-custom:focus, .btn-custom-sm:hover, .btn-custom-sm:focus {
+        background: linear-gradient(90deg, #FFB6C1 0%, #F49BAB 100%);
+        color: #fff;
+        box-shadow: 0 4px 16px #F49BAB66;
+        transform: translateY(-2px) scale(1.03);
+    }
+    .badge-custom {
+        background: #F49BAB;
+        color: #7F55B1;
+        font-weight: 600;
+        border-radius: 12px;
+        padding: 0.4em 1em;
+        font-size: 1em;
+    }
+    .no-bookings {
+        color: #9B7EBD;
+        text-align: center;
+        padding: 3rem 0 2rem 0;
+    }
+    .no-bookings i {
+        font-size: 4rem;
+        color: #F49BAB;
+        margin-bottom: 1.5rem;
+    }
+    media (max-width: 991px) {
+        .col-lg-6.col-xl-4.mb-4 {
+            margin-bottom: 2.5rem !important;
+        }
+        .booking-card {
+            min-height: 380px;
+            padding: 1.2rem 1rem 1rem 1rem;
+        }
+    }
+</style>
+
+<!-- HTML -->
+<div class="customer-bg">
+    <div class="container py-4">
+        <div class="row mb-4 align-items-center">
+            <div class="col-md-8">
+                <span class="dashboard-title"><i class="fas fa-list"></i> My Bookings</span>
+            </div>
+            <div class="col-md-4 text-md-end mt-2 mt-md-0">
+                <a asp-action="Cities" class="btn btn-custom">
+                    <i class="fas fa-plus"></i> Book New Tour
+                </a>
+            </div>
+        </div>
+        @if (Model != null && Model.Any())
+        {
+            <div class="row">
+                @foreach (var booking in Model)
+                {
+                    <div class="col-lg-6 col-xl-4 mb-4">
+                        <div class="booking-card h-100">
+                            @if (!string.IsNullOrEmpty(booking.City.ImageUrl))
+                            {
+                                <img src="@booking.City.ImageUrl" class="card-img-top" alt="@booking.City.Name" style="height: 200px; object-fit: cover; border-top-left-radius: 22px; border-top-right-radius: 22px;">
+                            }
+                            else
+                            {
+                                <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 200px; border-top-left-radius: 22px; border-top-right-radius: 22px;">
+                                    <i class="fas fa-city fa-3x text-muted"></i>
+                                </div>
+                            }
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span role="img" aria-label="location">📍</span> @booking.City.Name, @booking.City.Country
+                                </h5>
+                                <div class="mb-2">
+                                    <small>
+                                        <span role="img" aria-label="calendar">📅</span> Tour Date: <strong>@booking.BookingDate.ToString("MMM dd, yyyy")</strong>
+                                    </small>
+                                </div>
+                                <div class="mb-2">
+                                    <small>
+                                        <span role="img" aria-label="people">👥</span> People: <strong>@booking.NumberOfPeople</strong>
+                                    </small>
+                                </div>
+                                <div class="mb-2">
+                                    <small>
+                                        <span role="img" aria-label="money">💵</span> Total: <strong class="text-primary">₹@booking.TotalAmount.ToString("F2")</strong>
+                                    </small>
+                                </div>
+                                <div class="mb-3">
+                                    <span class="badge-custom bg-@(booking.Status == "Confirmed" ? "success" : booking.Status == "Pending" ? "warning" : "danger") fs-6">
+                                        @if (booking.Status == "Confirmed") { <span role="img" aria-label="confirmed">✅</span> }
+                                        else if (booking.Status == "Pending") { <span role="img" aria-label="pending">⏳</span> }
+                                        else { <span role="img" aria-label="cancelled">❌</span> }
+                                        @booking.Status
+                                    </span>
+                                </div>
+                                @if (!string.IsNullOrEmpty(booking.SpecialRequests))
+                                {
+                                    <div class="mb-2">
+                                        <small>
+                                            <span role="img" aria-label="comment">💬</span> Special Requests: @booking.SpecialRequests
+                                        </small>
+                                    </div>
+                                }
+                                <div class="mt-auto">
+                                    <small>
+                                        <span role="img" aria-label="booked">🗓️</span> Booked on: @booking.CreatedAt.ToString("MMM dd, yyyy")
+                                    </small>
+                                    <div class="mt-2">
+                                        @if (booking.Status == "Pending" && booking.BookingDate > DateTime.Now.AddDays(1))
+                                        {
+                                            <button class="btn btn-custom-sm" onclick="cancelBooking(@booking.Id)">
+                                                <span role="img" aria-label="cancel">❌</span> Cancel
+                                            </button>
+                                        }
+                                        @* <a asp-action="BookingDetails" asp-route-id="@booking.Id" class="btn btn-custom-sm">
+                                            <span role="img" aria-label="details">🔍</span> Details
+                                        </a> *@
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="row">
+                <div class="col-12">
+                    <div class="no-bookings">
+                        <i class="fas fa-calendar-times"></i>
+                        <h4>No bookings yet</h4>
+                        <p>Start exploring amazing cities and book your first tour!</p>
+                        <a asp-action="Cities" class="btn btn-custom">
+                            <i class="fas fa-search"></i> Browse Cities
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    function cancelBooking(bookingId) {
+        if (confirm('Are you sure you want to cancel this booking?')) {
+            fetch('/Customer/CancelBooking', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value || ''
+                },
+                body: JSON.stringify(bookingId)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert(data.message);
+                    location.reload();
+                } else {
+                    alert('Error: ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while cancelling the booking.');
+            });
+        }
+    }
+</script>

@@ -1,0 +1,196 @@
+﻿@model IEnumerable<CityExplorer.Models.City>
+@{
+    ViewData["Title"] = "Manage Cities";
+}
+
+<style>
+    body, .dashboard-card, .stats-card, .table, .btn {
+        font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    }
+    .admin-bg {
+        background: linear-gradient(135deg, #7F55B1 0%, #9B7EBD 100%);
+        min-height: 100vh;
+        padding-bottom: 40px;
+    }
+    .dashboard-card {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 4px 16px rgba(127,85,177,0.10);
+        padding: 2rem 2rem 1.5rem 2rem;
+        margin-bottom: 30px;
+        transition: box-shadow 0.2s;
+    }
+    .dashboard-card:hover {
+        box-shadow: 0 8px 32px rgba(127,85,177,0.18);
+    }
+    .dashboard-title {
+        color: #fff;
+        font-weight: 700;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+    }
+    .btn-custom {
+        background: linear-gradient(90deg, #F49BAB 0%, #FFB6C1 100%);
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        font-weight: 600;
+        box-shadow: 0 2px 8px #F49BAB33;
+        padding: 0.7rem 2rem;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    }
+    .btn-custom:hover, .btn-custom:focus {
+        background: linear-gradient(90deg, #FFB6C1 0%, #F49BAB 100%);
+        color: #fff;
+        box-shadow: 0 4px 16px #F49BAB66;
+    }
+    .table thead {
+        background: #7F55B1;
+        color: #fff;
+    }
+    .table tbody tr {
+        transition: background 0.2s;
+    }
+    .table-hover tbody tr:hover {
+        background: #F49BAB22;
+    }
+    .badge-custom {
+        background: #F49BAB;
+        color: #7F55B1;
+        font-weight: 600;
+        border-radius: 12px;
+        padding: 0.4em 1em;
+        font-size: 1em;
+    }
+    .city-img {
+        width: 50px; height: 50px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px #7F55B122;
+    }
+    .city-action-btns .btn {
+        border-radius: 50px;
+        margin-right: 0.3em;
+    }
+    .city-action-btns .btn:last-child {
+        margin-right: 0;
+    }
+</style>
+
+<div class="admin-bg">
+    <div class="container py-4">
+        <div class="row mb-4 align-items-center">
+            <div class="col-md-8">
+                <span class="dashboard-title"><i class="fas fa-city me-2"></i> Manage Cities</span>
+            </div>
+            <div class="col-md-4 text-md-end mt-2 mt-md-0">
+                <a asp-action="CreateCity" class="btn btn-custom">
+                    <span style="font-size:1.3em;">🏙️</span> Add New City
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="dashboard-card shadow">
+                    @if (Model != null && Model.Any())
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle" id="citiesTable">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Name</th>
+                                        <th>Country</th>
+                                        <th>Price</th>
+                                        <th>Duration</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var city in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @if (!string.IsNullOrEmpty(city.ImageUrl))
+                                                {
+                                                    <img src="@city.ImageUrl" alt="@city.Name" class="city-img">
+                                                }
+                                                else
+                                                {
+                                                    <div class="bg-light d-flex align-items-center justify-content-center city-img">
+                                                        <i class="fas fa-city text-muted"></i>
+                                                    </div>
+                                                }
+                                            </td>
+                                            <td><strong>@city.Name</strong></td>
+                                            <td>@city.Country</td>
+                                            <td><span class="badge-custom">$@city.Price.ToString("F2")</span></td>
+                                            <td>@city.Duration days</td>
+                                            <td>
+                                                @if (city.IsActive)
+                                                {
+                                                    <span class="badge-custom">Active</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge bg-danger">Inactive</span>
+                                                }
+                                            </td>
+                                            <td>
+                                                <div class="city-action-btns d-flex">
+                                                    <a asp-action="EditCity" asp-route-id="@city.Id" class="btn btn-sm btn-custom" title="Edit">
+                                                        <i class="fas fa-edit"></i>
+                                                    </a>
+                                                    <button type="button" class="btn btn-sm btn-danger" title="Delete" onclick="deleteCity(@city.Id, '@city.Name')">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-center py-5">
+                            <i class="fas fa-city fa-3x text-muted mb-3"></i>
+                            <h5 class="text-muted">No cities found</h5>
+                            <p class="text-muted">Start by adding your first city destination.</p>
+                            <a asp-action="CreateCity" class="btn btn-custom">
+                                <span style="font-size:1.3em;">🏙️</span> Add First City
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function deleteCity(cityId, cityName) {
+        if (confirm(`Are you sure you want to delete "${cityName}"?`)) {
+            fetch('/Admin/DeleteCity', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value || ''
+                },
+                body: JSON.stringify(cityId)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert(data.message);
+                    location.reload();
+                } else {
+                    alert('Error: ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while deleting the city.');
+            });
+        }
+    }
+</script>

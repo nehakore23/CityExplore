@@ -1,0 +1,165 @@
+﻿@model IEnumerable<CityExplorer.Models.City>
+@{
+    ViewData["Title"] = "Browse Cities";
+}
+
+<style>
+    body, .city-card, .btn {
+        font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    }
+    .customer-bg {
+        background: linear-gradient(135deg, #7F55B1 0%, #9B7EBD 100%);
+        min-height: 100vh;
+        padding-bottom: 40px;
+    }
+    .dashboard-title {
+        color: #fff;
+        font-weight: 700;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 8px #7F55B188;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+    }
+    .dashboard-desc {
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-shadow: 0 2px 8px #7F55B188;
+        margin-bottom: 2rem;
+    }
+    .city-card {
+        background: rgba(255,255,255,0.92);
+        border-radius: 22px;
+        box-shadow: 0 8px 32px rgba(127,85,177,0.18), 0 1.5px 8px rgba(127,85,177,0.10);
+        border: 2px solid #F49BAB33;
+        backdrop-filter: blur(6px);
+        transition: box-shadow 0.2s, border 0.2s, transform 0.18s;
+        overflow: hidden;
+    }
+    .city-card:hover {
+        box-shadow: 0 16px 48px rgba(127,85,177,0.22);
+        border: 2px solid #F49BAB44;
+        transform: translateY(-4px) scale(1.03);
+    }
+    .city-card .card-title {
+        color: #7F55B1;
+        font-weight: 700;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.4em;
+    }
+    .city-card .card-text {
+        color: #6c5a8a;
+        font-size: 1.05rem;
+    }
+    .city-card .btn-custom {
+        background: linear-gradient(90deg, #F49BAB 0%, #FFB6C1 100%);
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        font-weight: 600;
+        box-shadow: 0 2px 8px #F49BAB33;
+        padding: 0.7rem 2rem;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+        letter-spacing: 0.5px;
+        font-size: 1.08rem;
+    }
+    .city-card .btn-custom:hover, .city-card .btn-custom:focus {
+        background: linear-gradient(90deg, #FFB6C1 0%, #F49BAB 100%);
+        color: #fff;
+        box-shadow: 0 4px 16px #F49BAB66;
+        transform: translateY(-2px) scale(1.03);
+    }
+    .city-card .card-img-top {
+        border-top-left-radius: 22px;
+        border-top-right-radius: 22px;
+    }
+    .no-cities {
+        color: #9B7EBD;
+        text-align: center;
+        padding: 3rem 0 2rem 0;
+    }
+    .no-cities i {
+        font-size: 4rem;
+        color: #F49BAB;
+        margin-bottom: 1.5rem;
+    }
+</style>
+
+
+<div class="customer-bg">
+    <div class="container py-4">
+        <div class="row mb-4 align-items-center">
+            <div class="col-md-8">
+                <span class="dashboard-title"><i class="fas fa-map-marked-alt"></i> Browse Cities</span>
+            </div>
+            <div class="col-md-4 text-md-end mt-2 mt-md-0">
+                <span class="dashboard-desc">Discover amazing destinations</span>
+            </div>
+        </div>
+        @if (Model != null && Model.Any())
+        {
+            <div class="row">
+                @foreach (var city in Model)
+                {
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card city-card h-100">
+                            @if (!string.IsNullOrEmpty(city.ImageUrl))
+                            {
+                                <img src="@city.ImageUrl" class="card-img-top" alt="@city.Name" style="height: 250px; object-fit: cover;">
+                            }
+                            else
+                            {
+                                <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
+                                    <i class="fas fa-city fa-4x text-muted"></i>
+                                </div>
+                            }
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <i class="fas fa-map-marker-alt"></i> @city.Name, @city.Country
+                                </h5>
+                                <p class="card-text flex-grow-1">@city.Description</p>
+                                <div class="mt-auto">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="h5 text-primary mb-0">
+                                            <i class="fas fa-rupee-sign"></i> ₹@city.Price.ToString("F2")
+                                        </span>
+                                        <small class="text-muted">
+                                            <i class="fas fa-clock"></i> @city.Duration days
+                                        </small>
+                                    </div>
+
+                                    <div class="d-grid">
+                                        <a asp-action="BookTour" asp-route-id="@city.Id" class="btn btn-custom">
+                                            <i class="fas fa-calendar-plus"></i> Book This Tour
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="row">
+                <div class="col-12">
+                    <div class="no-cities">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h4>No cities available</h4>
+                        <p>Check back later for amazing destinations!</p>
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-custom">
+                            <i class="fas fa-home"></i> Go Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
