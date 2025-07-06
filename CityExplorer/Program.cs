@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using CityExplorer.Data;
 using CityExplorer.Services;
+using Microsoft.Extensions.Configuration; 
 
 namespace CityExplorer
 {

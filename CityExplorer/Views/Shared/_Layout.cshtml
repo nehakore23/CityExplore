@@ -177,7 +177,7 @@
             background: linear-gradient(45deg, #0056b3, #00b4d8);
             color: #fff;
         }
-        /* Featured Destinations Header Styling */
+   
         .featured-destinations-header {
             background: linear-gradient(90deg, #e3f2fd 0%, #fff 100%);
             border-radius: 18px;
@@ -229,12 +229,16 @@
             color: #F49BAB;
             font-weight: 700;
         }
-        .footer-section a, .footer-section .footer-menu a {
-            color: #FFE1E0;
+        .footer-section a,
+        .footer-section .footer-menu a,
+        .footer-section ul li a {
+            color: #fff !important;
             transition: color 0.2s;
         }
-        .footer-section a:hover, .footer-section .footer-menu a:hover {
-            color: #F49BAB;
+        .footer-section a:hover,
+        .footer-section .footer-menu a:hover,
+        .footer-section ul li a:hover {
+            color: #F49BAB !important;
         }
         .footer-section .footer-social-icon i {
             background: #9B7EBD;
@@ -528,28 +532,28 @@
                 <div class="row">
                     <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-map-marker-alt" style="color:#fff;"></i>
                             <div class="cta-text">
-                                <h4>Find us</h4>
-                                <span>1010 Avenue, sw 54321, Chandigarh</span>
+                                <h4 style="color:#fff;">Find us</h4>
+                                <span style="color:#fff;">1010 Avenue, sw 54321, Chandigarh</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">
-                            <i class="fas fa-phone"></i>
+                            <i class="fas fa-phone" style="color:#fff;"></i>
                             <div class="cta-text">
-                                <h4>Call us</h4>
-                                <span>9876543210</span>
+                                <h4 style="color:#fff;">Call us</h4>
+                                <span style="color:#fff;">9876543210</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-4 mb-30">
                         <div class="single-cta">
-                            <i class="far fa-envelope-open"></i>
+                            <i class="far fa-envelope-open" style="color:#fff;"></i>
                             <div class="cta-text">
-                                <h4>Mail us</h4>
-                                <span>info@cityexplore.com</span>
+                                <h4 style="color:#fff;">Mail us</h4>
+                                <span style="color:#fff;">info@cityexplore.com</span>
                             </div>
                         </div>
                     </div>
@@ -560,38 +564,38 @@
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="/" style="font-size:2rem;font-weight:700;color:#7F55B1;text-decoration:none;letter-spacing:1px;display:inline-block;">
+                                <a href="/" style="font-size:2rem;font-weight:700;color:#fff;text-decoration:none;letter-spacing:1px;display:inline-block;">
                                     <span role="img" aria-label="city">🌆</span> City Explorer
                                 </a>
                             </div>
                             <div class="footer-text">
-                                <p>City Explore is your gateway to authentic city experiences. Discover, connect, and explore with local guides and unique journeys.</p>
+                                <p style="color:#fff;">City Explore is your gateway to authentic city experiences. Discover, connect, and explore with local guides and unique journeys.</p>
                             </div>
                             <div class="footer-social-icon">
-                                <span>Follow us</span>
-                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                <span style="color:#fff;">Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg" style="color:#fff;"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg" style="color:#fff;"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg" style="color:#fff;"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
                         <div class="footer-widget">
                             <div class="footer-widget-heading">
-                                <h3>Useful Links</h3>
+                                <h3 style="color:#fff;">Useful Links</h3>
                             </div>
                             <ul>
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/Home/About">About</a></li>
+                                <li><a href="/" style="color:#fff;">Home</a></li>
+                                <li><a href="/Home/About" style="color:#fff;">About</a></li>
                                 @if (ViewBag.IsLoggedIn == true)
                                 {
                                     @if (ViewBag.UserRole == "Admin")
                                     {
-                                        <li><a href="/Admin">Admin Dashboard</a></li>
+                                        <li><a href="/Admin" style="color:#fff;">Admin Dashboard</a></li>
                                     }
                                     else if (ViewBag.UserRole == "Customer")
                                     {
-                                        <li><a href="/Customer">My Dashboard</a></li>
+                                        <li><a href="/Customer" style="color:#fff;">My Dashboard</a></li>
                                     }
                                 }
                             </ul>
@@ -600,10 +604,10 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
                         <div class="footer-widget">
                             <div class="footer-widget-heading">
-                                <h3>Subscribe</h3>
+                                <h3 style="color:#fff;">Subscribe</h3>
                             </div>
                             <div class="footer-text mb-25">
-                                <p>Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                <p style="color:#fff;">Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
                             </div>
                             <div class="subscribe-form">
                                 <form action="#">
@@ -616,28 +620,7 @@
                 </div>
             </div>
         </div>
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text">
-                            <p>Copyright &copy; 2024, All Right Reserved City Explore</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="/">Home</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Policy</a></li>
-                                <li><a href="/Home/Contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "CityExplorer": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:62250;http://localhost:62251"
+    }
+  }
+}

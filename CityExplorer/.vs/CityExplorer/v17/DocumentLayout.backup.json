@@ -1,162 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\",
+  "WorkspaceRootPath": "D:\\All Projects\\CityExplorer\\CityExplorer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\migrations\\20250702143325_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:migrations\\20250702143325_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\customer\\mybookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\customer\\mybookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\customer\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\customer\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\customer\\cities.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\customer\\cities.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\customer\\booktour.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\customer\\booktour.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\admin\\editcity.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\admin\\editcity.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\admin\\customers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\admin\\customers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\admin\\createcity.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\admin\\createcity.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\admin\\cities.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\admin\\cities.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\views\\admin\\bookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\admin\\bookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\models\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:models\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\models\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:models\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\models\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:models\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\models\\viewmodels\\cityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:models\\viewmodels\\cityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\models\\viewmodels\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:models\\viewmodels\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\cdac\\.net\\cityexplorer final\\cityexplorer final\\cityexplorer\\wwwroot\\images\\2.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:wwwroot\\images\\2.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -166,516 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAywCkAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:51:28.875Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-04T03:51:26.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T03:51:24.354Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T03:51:22.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T03:51:19.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T03:51:17.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T03:50:29.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "SessionService.cs",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Services\\SessionService.cs",
-              "RelativeDocumentMoniker": "Services\\SessionService.cs",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Services\\SessionService.cs",
-              "RelativeToolTip": "Services\\SessionService.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:46:24.874Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAA1wCAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:46:15.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:46:13.812Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "City.cs",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Models\\City.cs",
-              "RelativeDocumentMoniker": "Models\\City.cs",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Models\\City.cs",
-              "RelativeToolTip": "Models\\City.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAuwCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:46:08.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Booking.cs",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Models\\Booking.cs",
-              "RelativeDocumentMoniker": "Models\\Booking.cs",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Models\\Booking.cs",
-              "RelativeToolTip": "Models\\Booking.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:45:57.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Models\\ViewModels\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ViewModels\\RegisterViewModel.cs",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Models\\ViewModels\\RegisterViewModel.cs",
-              "RelativeToolTip": "Models\\ViewModels\\RegisterViewModel.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:45:47.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Models\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ViewModels\\LoginViewModel.cs",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Models\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "Models\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAIBAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:45:44.688Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "BookingViewModel.cs",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Models\\ViewModels\\BookingViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ViewModels\\BookingViewModel.cs",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Models\\ViewModels\\BookingViewModel.cs",
-              "RelativeToolTip": "Models\\ViewModels\\BookingViewModel.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:45:13.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "ApplicationDbContextModelSnapshot.cs",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeToolTip": "Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ViewState": "AgIAALIAAAAAAAAAAAAywAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:44:58.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20250702143325_InitialCreate.cs",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Migrations\\20250702143325_InitialCreate.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250702143325_InitialCreate.cs",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Migrations\\20250702143325_InitialCreate.cs",
-              "RelativeToolTip": "Migrations\\20250702143325_InitialCreate.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAywAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:44:52.849Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:41:23.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAzwCsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:41:19.035Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "Controllers\\CustomerController.cs",
-              "ViewState": "AgIAAB8BAAAAAAAAAAAIwPkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:40:32.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAYwFUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:40:11.761Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAJMAAAAAAAAAAIAwwKAAAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T17:12:27.619Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AgIAADgBAAAAAAAAAAA1wDQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:39:42.307Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "2.jpg -  [English (United States)] - Bitmap [1900x800, 24 bit, JPG]",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\wwwroot\\images\\2.jpg",
-              "RelativeDocumentMoniker": "wwwroot\\images\\2.jpg",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\wwwroot\\images\\2.jpg -  [English (United States)] - Bitmap [1900x800, 24 bit, JPG]",
-              "RelativeToolTip": "wwwroot\\images\\2.jpg -  [English (United States)] - Bitmap [1900x800, 24 bit, JPG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-07-04T03:39:36.794Z",
-              "EditorCaption": " -  [English (United States)] - Bitmap [1900x800, 24 bit, JPG]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "CityViewModel.cs",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Models\\ViewModels\\CityViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ViewModels\\CityViewModel.cs",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Models\\ViewModels\\CityViewModel.cs",
-              "RelativeToolTip": "Models\\ViewModels\\CityViewModel.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAYwBYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T17:34:56.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAA4BAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Auth\\Register.cshtml",
+              "ToolTip": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "Views\\Auth\\Register.cshtml",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAYwNkAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T16:42:04.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "About.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Home\\About.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\About.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Home\\About.cshtml",
-              "RelativeToolTip": "Views\\Home\\About.cshtml",
-              "ViewState": "AgIAAPkAAAAAAAAAAAAAABsAAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T16:40:37.208Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MyBookings.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Customer\\MyBookings.cshtml",
-              "RelativeDocumentMoniker": "Views\\Customer\\MyBookings.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Customer\\MyBookings.cshtml",
-              "RelativeToolTip": "Views\\Customer\\MyBookings.cshtml",
-              "ViewState": "AgIAAN4AAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T16:40:31.094Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Customer\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "Views\\Customer\\Dashboard.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Customer\\Dashboard.cshtml",
-              "RelativeToolTip": "Views\\Customer\\Dashboard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T16:40:18.107Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Cities.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Customer\\Cities.cshtml",
-              "RelativeDocumentMoniker": "Views\\Customer\\Cities.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Customer\\Cities.cshtml",
-              "RelativeToolTip": "Views\\Customer\\Cities.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T16:40:09.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "BookTour.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Customer\\BookTour.cshtml",
-              "RelativeDocumentMoniker": "Views\\Customer\\BookTour.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Customer\\BookTour.cshtml",
-              "RelativeToolTip": "Views\\Customer\\BookTour.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T16:39:52.082Z",
+              "WhenOpened": "2025-07-06T17:11:37.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Auth\\Register.cshtml",
-              "RelativeDocumentMoniker": "Views\\Auth\\Register.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Auth\\Register.cshtml",
-              "RelativeToolTip": "Views\\Auth\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T16:39:47.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Auth\\Login.cshtml",
+              "DocumentMoniker": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Auth\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Auth\\Login.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Auth\\Login.cshtml",
               "RelativeToolTip": "Views\\Auth\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T16:39:42.702Z",
+              "WhenOpened": "2025-07-06T17:08:42.04Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "EditCity.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Admin\\EditCity.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\EditCity.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Admin\\EditCity.cshtml",
-              "RelativeToolTip": "Views\\Admin\\EditCity.cshtml",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\About.cshtml",
+              "ToolTip": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAnwAsAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T16:39:34.342Z",
+              "WhenOpened": "2025-07-06T16:57:50.86Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Admin\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Dashboard.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Admin\\Dashboard.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Dashboard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T16:39:19.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Customers.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Admin\\Customers.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Customers.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Admin\\Customers.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Customers.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T16:39:13.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "CreateCity.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Admin\\CreateCity.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\CreateCity.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Admin\\CreateCity.cshtml",
-              "RelativeToolTip": "Views\\Admin\\CreateCity.cshtml",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAAAGoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T16:39:08.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Cities.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Admin\\Cities.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Cities.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Admin\\Cities.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Cities.cshtml",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T16:39:00.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Bookings.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Admin\\Bookings.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Bookings.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Admin\\Bookings.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Bookings.cshtml",
-              "ViewState": "AgIAAPAAAAAAAAAAAAAAANMAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T16:23:59.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAJ8CAAAAAAAAAAAAAAsCAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAIAwwHEAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T16:26:20.678Z",
+              "WhenOpened": "2025-07-06T16:33:52.918Z",
               "EditorCaption": ""
             }
           ]

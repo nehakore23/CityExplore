@@ -868,23 +868,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aryad\\.nuget\\packages\\": {},
+    "C:\\Users\\hp\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\CityExplorer.csproj",
+      "projectUniqueName": "D:\\All Projects\\CityExplorer\\CityExplorer\\CityExplorer.csproj",
       "projectName": "CityExplorer",
-      "projectPath": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\CityExplorer.csproj",
-      "packagesPath": "C:\\Users\\aryad\\.nuget\\packages\\",
-      "outputPath": "D:\\CDAC\\.NET\\cityexplorer final\\cityexplorer final\\CityExplorer\\obj\\",
+      "projectPath": "D:\\All Projects\\CityExplorer\\CityExplorer\\CityExplorer.csproj",
+      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+      "outputPath": "D:\\All Projects\\CityExplorer\\CityExplorer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\aryad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -2,19 +2,20 @@
     ViewData["Title"] = "About Us";
 }
 
-<div class="container my-5">
-    <div class="row">
-        <div class="col-12 text-center mb-5">
-            <h1 class="display-4">
-                <i class="fas fa-info-circle text-primary"></i> About CityExplorer
-            </h1>
-            <p class="lead text-muted">Your gateway to extraordinary city adventures</p>
-        </div>
+<!-- Hero Section -->
+<div class="about-hero d-flex align-items-center justify-content-center text-white mb-5" style="min-height: 350px; background: linear-gradient(120deg, #007bff 60%, #6c63ff 100%); background-size: cover; border-radius: 1.5rem; box-shadow: 0 4px 32px rgba(0,0,0,0.12);">
+    <div class="text-center w-100">
+        <h1 class="display-3 fw-bold mb-3 animate__animated animate__fadeInDown">
+            <i class="fas fa-info-circle me-2"></i> About CityExplorer
+        </h1>
+        <p class="lead fs-4 animate__animated animate__fadeInUp animate__delay-1s">Your gateway to extraordinary city adventures</p>
     </div>
-    
+</div>
+
+<div class="container mb-5">
     <div class="row align-items-center mb-5">
-        <div class="col-lg-6">
-            <h2 class="mb-4">Our Story</h2>
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="mb-4 fw-semibold text-primary">Our Story</h2>
             <p class="lead">
                 Founded in 2020, CityExplorer was born from a passion for urban exploration and cultural discovery. 
                 We believe that every city has its own unique story, hidden gems, and unforgettable experiences waiting to be discovered.
@@ -25,63 +26,61 @@
                 we help travelers connect with the heart and soul of each destination.
             </p>
         </div>
-        <div class="col-lg-6">
-            <div class="text-center">
-                <i class="fas fa-city fa-10x text-primary opacity-25"></i>
-            </div>
+        <div class="col-lg-6 text-center">
+            <img src="/wwwroot/images/1.jpg" alt="City Explorer" class="img-fluid rounded shadow-lg animate__animated animate__zoomIn" style="max-height: 320px; object-fit: cover; border: 6px solid #fff;" />
         </div>
     </div>
-    
+
     <div class="row mb-5">
         <div class="col-12">
-            <h2 class="text-center mb-5">Our Mission & Values</h2>
+            <h2 class="text-center mb-5 fw-semibold text-primary">Our Mission & Values</h2>
         </div>
         <div class="col-lg-4 mb-4">
-            <div class="card h-100 border-0 shadow-sm">
+            <div class="card h-100 border-0 shadow-lg animate__animated animate__fadeInUp" style="transition: transform 0.2s;">
                 <div class="card-body text-center">
                     <i class="fas fa-globe fa-3x text-primary mb-3"></i>
-                    <h4>Global Reach</h4>
+                    <h4 class="fw-bold">Global Reach</h4>
                     <p>Connecting travelers with amazing cities across all continents, making the world more accessible.</p>
                 </div>
             </div>
         </div>
         <div class="col-lg-4 mb-4">
-            <div class="card h-100 border-0 shadow-sm">
+            <div class="card h-100 border-0 shadow-lg animate__animated animate__fadeInUp animate__delay-1s" style="transition: transform 0.2s;">
                 <div class="card-body text-center">
                     <i class="fas fa-handshake fa-3x text-primary mb-3"></i>
-                    <h4>Local Partnership</h4>
+                    <h4 class="fw-bold">Local Partnership</h4>
                     <p>Working closely with local communities to provide authentic experiences while supporting local economies.</p>
                 </div>
             </div>
         </div>
         <div class="col-lg-4 mb-4">
-            <div class="card h-100 border-0 shadow-sm">
+            <div class="card h-100 border-0 shadow-lg animate__animated animate__fadeInUp animate__delay-2s" style="transition: transform 0.2s;">
                 <div class="card-body text-center">
                     <i class="fas fa-leaf fa-3x text-primary mb-3"></i>
-                    <h4>Sustainable Tourism</h4>
+                    <h4 class="fw-bold">Sustainable Tourism</h4>
                     <p>Promoting responsible travel practices that preserve destinations for future generations.</p>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <div class="row">
         <div class="col-12">
-            <div class="bg-primary text-white rounded p-5 text-center">
-                <h2 class="mb-4">Ready to Explore?</h2>
+            <div class="bg-primary text-white rounded p-5 text-center shadow-lg animate__animated animate__fadeInUp animate__delay-3s">
+                <h2 class="mb-4 fw-bold">Ready to Explore?</h2>
                 <p class="lead mb-4">Join thousands of satisfied travelers who have discovered amazing cities with us.</p>
                 @if (ViewBag.IsLoggedIn != true)
                 {
-                    <a class="btn btn-light btn-lg me-3" asp-controller="Auth" asp-action="Register">
+                    <a class="btn btn-light btn-lg me-3 px-4 py-2 fw-semibold shadow-sm" asp-controller="Auth" asp-action="Register">
                         <i class="fas fa-user-plus"></i> Join Now
                     </a>
-                    <a class="btn btn-outline-light btn-lg" asp-controller="Auth" asp-action="Login">
+                    <a class="btn btn-outline-light btn-lg px-4 py-2 fw-semibold" asp-controller="Auth" asp-action="Login">
                         <i class="fas fa-sign-in-alt"></i> Login
                     </a>
                 }
                 else if (ViewBag.UserRole == "Customer")
                 {
-                    <a class="btn btn-light btn-lg" asp-controller="Customer" asp-action="Cities">
+                    <a class="btn btn-light btn-lg px-4 py-2 fw-semibold" asp-controller="Customer" asp-action="Cities">
                         <i class="fas fa-map-marked-alt"></i> Browse Cities
                     </a>
                 }
@@ -89,3 +88,19 @@
         </div>
     </div>
 </div>
+
+<!-- Animate.css CDN for subtle animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<style>
+    .about-hero {
+        box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.18) !important;
+    }
+</style>
