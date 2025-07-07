@@ -1,0 +1,104 @@
+@model CityExplorer.Models.User
+@{
+    ViewData["Title"] = "Edit Profile";
+}
+<style>
+    body, .dashboard-card, .btn {
+        font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    }
+    .customer-bg {
+        background: linear-gradient(135deg, #7F55B1 0%, #9B7EBD 100%);
+        min-height: 100vh;
+        padding-bottom: 40px;
+    }
+    .dashboard-title {
+        color: #fff;
+        font-weight: 700;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 8px #7F55B188;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+    }
+    .dashboard-card {
+        background: rgba(255,255,255,0.85);
+        border-radius: 22px;
+        box-shadow: 0 8px 32px rgba(127,85,177,0.18), 0 1.5px 8px rgba(127,85,177,0.10);
+        padding: 2.5rem 2.5rem 2rem 2.5rem;
+        margin-bottom: 30px;
+        border: 2.5px solid #F49BAB33;
+        backdrop-filter: blur(8px);
+        transition: box-shadow 0.2s, border 0.2s;
+    }
+    .dashboard-card:hover {
+        box-shadow: 0 12px 40px rgba(127,85,177,0.22);
+        border: 2.5px solid #F49BAB44;
+    }
+    .btn-custom {
+        background: linear-gradient(90deg, #F49BAB 0%, #FFB6C1 100%);
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        font-weight: 600;
+        box-shadow: 0 2px 8px #F49BAB33;
+        padding: 0.7rem 2rem;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+        letter-spacing: 0.5px;
+        font-size: 1.1rem;
+    }
+    .btn-custom:hover, .btn-custom:focus {
+        background: linear-gradient(90deg, #FFB6C1 0%, #F49BAB 100%);
+        color: #fff;
+        box-shadow: 0 4px 16px #F49BAB66;
+        transform: translateY(-2px) scale(1.03);
+    }
+    .btn-secondary {
+        border-radius: 50px;
+        font-weight: 600;
+        padding: 0.7rem 2rem;
+        font-size: 1.1rem;
+    }
+</style>
+<div class="customer-bg">
+    <div class="container py-4">
+        <div class="row mb-4 align-items-center">
+            <div class="col-md-8">
+                <span class="dashboard-title"><i class="fas fa-user-edit"></i> Edit Profile</span>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="dashboard-card shadow">
+                    <form asp-action="EditProfile" method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="Username" />
+                        <input type="hidden" asp-for="Password" />
+                        <input type="hidden" asp-for="Role" />
+                        <div class="mb-3">
+                            <label asp-for="FullName" class="form-label">Full Name</label>
+                            <input asp-for="FullName" class="form-control" />
+                            <span asp-validation-for="FullName" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label">Email</label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Phone" class="form-label">Phone</label>
+                            <input asp-for="Phone" class="form-control" />
+                            <span asp-validation-for="Phone" class="text-danger"></span>
+                        </div>
+                        <button type="submit" class="btn btn-custom"><i class="fas fa-save"></i> Save Changes</button>
+                        <a href="/Customer/Profile" class="btn btn-secondary ms-2">Cancel</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 

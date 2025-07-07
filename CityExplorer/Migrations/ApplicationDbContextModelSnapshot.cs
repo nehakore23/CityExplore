@@ -13,7 +13,7 @@ namespace CityExplorer.Migrations
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
-#pragma warning disable 612, 618
+
             modelBuilder
                 .HasAnnotation("ProductVersion", "6.0.25")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
@@ -220,7 +220,7 @@ namespace CityExplorer.Migrations
                 {
                     b.Navigation("Bookings");
                 });
-#pragma warning restore 612, 618
+
         }
     }
 }

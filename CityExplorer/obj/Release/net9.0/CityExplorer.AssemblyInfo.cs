@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CityExplorer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e883107da85b197af729e457297de17e8986937")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6e7610c9e229d52c4c994b12b41ba1b142daf7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("CityExplorer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CityExplorer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

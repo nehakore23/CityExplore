@@ -49,7 +49,7 @@ namespace CityExplorer.Controllers
                         Role = user.Role,
                         FullName = user.FullName
                     });
-
+                    TempData["Success"] = "Login successfully";
                     if (user.Role == "Admin")
                     {
                         return RedirectToAction("Dashboard", "Admin");

@@ -294,5 +294,71 @@ namespace CityExplorer.Controllers
                 return RedirectToAction("MyBookings");
             }
         }
+
+        [HttpGet]
+        public IActionResult Profile()
+        {
+            if (!IsCustomerLoggedIn())
+            {
+                TempData["Error"] = "Access denied. Customer login required.";
+                return RedirectToAction("Login", "Auth");
+            }
+            var userId = GetCurrentUserId();
+            var user = _context.Users.FirstOrDefault(u => u.Id == userId);
+            if (user == null)
+            {
+                TempData["Error"] = "User not found.";
+                return RedirectToAction("Dashboard");
+            }
+            return View(user);
+        }
+
+        [HttpGet]
+        public IActionResult EditProfile()
+        {
+            if (!IsCustomerLoggedIn())
+            {
+                TempData["Error"] = "Access denied. Customer login required.";
+                return RedirectToAction("Login", "Auth");
+            }
+            var userId = GetCurrentUserId();
+            var user = _context.Users.FirstOrDefault(u => u.Id == userId);
+            if (user == null)
+            {
+                TempData["Error"] = "User not found.";
+                return RedirectToAction("Dashboard");
+            }
+            return View(user);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult EditProfile(User model)
+        {
+            if (!IsCustomerLoggedIn())
+            {
+                TempData["Error"] = "Access denied. Customer login required.";
+                return RedirectToAction("Login", "Auth");
+            }
+            if (ModelState.IsValid)
+            {
+                var userId = GetCurrentUserId();
+                var user = _context.Users.FirstOrDefault(u => u.Id == userId);
+                if (user == null)
+                {
+                    TempData["Error"] = "User not found.";
+                    return RedirectToAction("Dashboard");
+                }
+                user.FullName = model.FullName;
+                user.Email = model.Email;
+                user.Phone = model.Phone;
+                // Optionally allow password change here
+                _context.SaveChanges();
+                TempData["Success"] = "Your profile is updated";
+                _sessionService.SetSession("FullName", user.FullName);
+                return RedirectToAction("Profile");
+            }
+            return View(model);
+        }
     }
 }

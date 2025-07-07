@@ -358,7 +358,6 @@ D:\All Projects\CityExplorer\CityExplorer\obj\Debug\net9.0\scopedcss\bundle\City
 D:\All Projects\CityExplorer\CityExplorer\obj\Debug\net9.0\scopedcss\projectbundle\CityExplorer.bundle.scp.css
 D:\All Projects\CityExplorer\CityExplorer\obj\Debug\net9.0\compressed\jmgnc2fq4d-jeee94xuy8.gz
 D:\All Projects\CityExplorer\CityExplorer\obj\Debug\net9.0\compressed\dbvk6v489g-61n19gt1b8.gz
-D:\All Projects\CityExplorer\CityExplorer\obj\Debug\net9.0\compressed\52jj5z4htt-xtxxf3hu2r.gz
 D:\All Projects\CityExplorer\CityExplorer\obj\Debug\net9.0\compressed\mmbwr916kw-bqjiyaj88i.gz
 D:\All Projects\CityExplorer\CityExplorer\obj\Debug\net9.0\compressed\pgpt3lyiq1-c2jlpeoesf.gz
 D:\All Projects\CityExplorer\CityExplorer\obj\Debug\net9.0\compressed\rfadg8f8jb-erw9l3u2r3.gz
@@ -431,3 +430,4 @@ D:\All Projects\CityExplorer\CityExplorer\obj\Debug\net9.0\refint\CityExplorer.d
 D:\All Projects\CityExplorer\CityExplorer\obj\Debug\net9.0\CityExplorer.pdb
 D:\All Projects\CityExplorer\CityExplorer\obj\Debug\net9.0\CityExplorer.genruntimeconfig.cache
 D:\All Projects\CityExplorer\CityExplorer\obj\Debug\net9.0\ref\CityExplorer.dll
+D:\All Projects\CityExplorer\CityExplorer\obj\Debug\net9.0\compressed\52jj5z4htt-fr7q2aak1r.gz

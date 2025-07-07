@@ -1,0 +1,87 @@
+@model CityExplorer.Models.User
+@{
+    ViewData["Title"] = "My Profile";
+}
+<style>
+    body, .dashboard-card {
+        font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    }
+    .customer-bg {
+        background: linear-gradient(135deg, #7F55B1 0%, #9B7EBD 100%);
+        min-height: 100vh;
+        padding-bottom: 40px;
+    }
+    .dashboard-title {
+        color: #fff;
+        font-weight: 700;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 8px #7F55B188;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+    }
+    .dashboard-card {
+        background: rgba(255,255,255,0.85);
+        border-radius: 22px;
+        box-shadow: 0 8px 32px rgba(127,85,177,0.18), 0 1.5px 8px rgba(127,85,177,0.10);
+        padding: 2.5rem 2.5rem 2rem 2.5rem;
+        margin-bottom: 30px;
+        border: 2.5px solid #F49BAB33;
+        backdrop-filter: blur(8px);
+        transition: box-shadow 0.2s, border 0.2s;
+    }
+    .dashboard-card:hover {
+        box-shadow: 0 12px 40px rgba(127,85,177,0.22);
+        border: 2.5px solid #F49BAB44;
+    }
+    .btn-custom {
+        background: linear-gradient(90deg, #F49BAB 0%, #FFB6C1 100%);
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        font-weight: 600;
+        box-shadow: 0 2px 8px #F49BAB33;
+        padding: 0.7rem 2rem;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+        letter-spacing: 0.5px;
+        font-size: 1.1rem;
+    }
+    .btn-custom:hover, .btn-custom:focus {
+        background: linear-gradient(90deg, #FFB6C1 0%, #F49BAB 100%);
+        color: #fff;
+        box-shadow: 0 4px 16px #F49BAB66;
+        transform: translateY(-2px) scale(1.03);
+    }
+</style>
+<div class="customer-bg">
+    <div class="container py-4">
+        <div class="row mb-4 align-items-center">
+            <div class="col-md-8">
+                <span class="dashboard-title"><i class="fas fa-user"></i> My Profile</span>
+            </div>
+            <div class="col-md-4 text-md-end mt-2 mt-md-0">
+                <a href="/Customer/EditProfile" class="btn btn-custom"><i class="fas fa-edit"></i> Edit Profile</a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="dashboard-card shadow">
+                    <dl class="row mb-0">
+                        <dt class="col-sm-4">Full Name</dt>
+                        <dd class="col-sm-8">@Model.FullName</dd>
+                        <dt class="col-sm-4">Username</dt>
+                        <dd class="col-sm-8">@Model.Username</dd>
+                        <dt class="col-sm-4">Email</dt>
+                        <dd class="col-sm-8">@Model.Email</dd>
+                        <dt class="col-sm-4">Phone</dt>
+                        <dd class="col-sm-8">@Model.Phone</dd>
+                        <dt class="col-sm-4">Role</dt>
+                        <dd class="col-sm-8">@Model.Role</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

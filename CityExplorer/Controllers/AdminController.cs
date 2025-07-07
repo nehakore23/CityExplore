@@ -308,7 +308,7 @@ namespace CityExplorer.Controllers
         }
 
         [HttpPost]
-        public IActionResult UpdateBookingStatus([FromBody] dynamic data)
+        public IActionResult UpdateBookingStatus([FromBody] BookingStatusUpdateModel data)
         {
             if (!IsAdminLoggedIn())
             {

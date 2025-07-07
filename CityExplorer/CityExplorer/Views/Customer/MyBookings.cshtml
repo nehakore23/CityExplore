@@ -1,0 +1,7 @@
+@if (TempData["Success"] != null)
+{
+    <div class="custom-success-alert alert-dismissible fade show" role="alert">
+        <i class="fas fa-check-circle"></i> @TempData["Success"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+} 

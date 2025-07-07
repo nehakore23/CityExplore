@@ -3,24 +3,52 @@
   "WorkspaceRootPath": "D:\\All Projects\\CityExplorer\\CityExplorer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\views\\customer\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\customer\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\views\\customer\\mybookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\customer\\mybookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\views\\admin\\customers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\admin\\customers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|d:\\all projects\\cityexplorer\\cityexplorer\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51874CB9-F86F-4C96-91D2-055187BF2BA5}|CityExplorer.csproj|solutionrelative:views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,28 +63,114 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Customer\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Customer\\Dashboard.cshtml",
+              "ToolTip": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Customer\\Dashboard.cshtml",
+              "RelativeToolTip": "Views\\Customer\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-07T13:58:05.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "D:\\All Projects\\CityExplorer\\CityExplorer\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
+              "ToolTip": "D:\\All Projects\\CityExplorer\\CityExplorer\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAAcBAAAAAAAAAAAjwLkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T13:04:14.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MyBookings.cshtml",
+              "DocumentMoniker": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Customer\\MyBookings.cshtml",
+              "RelativeDocumentMoniker": "Views\\Customer\\MyBookings.cshtml",
+              "ToolTip": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Customer\\MyBookings.cshtml",
+              "RelativeToolTip": "Views\\Customer\\MyBookings.cshtml",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAP0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-07T12:58:54.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Customers.cshtml",
+              "DocumentMoniker": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Admin\\Customers.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Customers.cshtml",
+              "ToolTip": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Admin\\Customers.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Customers.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-07T12:54:41.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SessionService.cs",
+              "DocumentMoniker": "D:\\All Projects\\CityExplorer\\CityExplorer\\Services\\SessionService.cs",
+              "RelativeDocumentMoniker": "Services\\SessionService.cs",
+              "ToolTip": "D:\\All Projects\\CityExplorer\\CityExplorer\\Services\\SessionService.cs",
+              "RelativeToolTip": "Services\\SessionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T06:35:03.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\All Projects\\CityExplorer\\CityExplorer\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\All Projects\\CityExplorer\\CityExplorer\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T06:34:52.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\All Projects\\CityExplorer\\CityExplorer\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\All Projects\\CityExplorer\\CityExplorer\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-07T06:34:48.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAJMAAAAAAAAAAIAwwKAAAABwAAAAAAAAAA==",
+              "ViewState": "AgIAAJYAAAAAAAAAAIAwwKAAAABwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-06T17:12:27.619Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T17:12:27.619Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Register.cshtml",
               "DocumentMoniker": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Auth\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\Auth\\Register.cshtml",
               "ToolTip": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Auth\\Register.cshtml",
               "RelativeToolTip": "Views\\Auth\\Register.cshtml",
-              "ViewState": "AgIAAMgAAAAAAAAAAAAYwNkAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAMwIUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-06T17:11:37.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T17:11:37.695Z"
             },
             {
               "$type": "Document",
@@ -66,14 +180,14 @@
               "RelativeDocumentMoniker": "Views\\Auth\\Login.cshtml",
               "ToolTip": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Auth\\Login.cshtml",
               "RelativeToolTip": "Views\\Auth\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAAAA8AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-06T17:08:42.04Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "About.cshtml",
               "DocumentMoniker": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\About.cshtml",
@@ -81,18 +195,17 @@
               "RelativeToolTip": "Views\\Home\\About.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAnwAsAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-06T16:57:50.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T16:57:50.86Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\All Projects\\CityExplorer\\CityExplorer\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAGQAAAAAAAAAAIAwwHEAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-06T16:33:52.918Z",
               "EditorCaption": ""

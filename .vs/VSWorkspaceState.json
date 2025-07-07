@@ -3,13 +3,14 @@
     "",
     "\\CityExplorer",
     "\\CityExplorer\\Views",
-    "\\CityExplorer\\Views\\Admin",
-    "\\CityExplorer\\Views\\Auth",
-    "\\CityExplorer\\Views\\Home",
     "\\CityExplorer\\Views\\Shared",
     "\\CityExplorer\\wwwroot",
-    "\\CityExplorer\\wwwroot\\js"
+    "\\CityExplorer\\wwwroot\\js",
+    "\\Properties",
+    "\\Services",
+    "\\Views",
+    "\\Views\\Shared"
   ],
-  "SelectedNode": "\\CityExplorer\\CityExplorer.sln",
+  "SelectedNode": "\\CityExplorer\\Migrations\\ApplicationDbContextModelSnapshot.cs",
   "PreviewInSolutionExplorer": false
 }

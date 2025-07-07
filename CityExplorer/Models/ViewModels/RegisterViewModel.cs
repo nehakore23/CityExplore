@@ -27,6 +27,7 @@ namespace CityExplorer.Models.ViewModels
         public string FullName { get; set; }
 
         [Phone(ErrorMessage = "Invalid phone number")]
+        [RegularExpression(@"^\d{10}$", ErrorMessage = "Phone number must be exactly 10 digits")]
         public string? Phone { get; set; }
     }
 }
